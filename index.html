@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product preview card component</title>
+  <!-- website logo -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
 
   <!-- link css file -->
   <link rel="stylesheet" href="style.css">
@@ -20,7 +22,10 @@
   </head>
 <body>
   <main>
-    <div class="image"></div>
+    <picture class="image">
+      <source media="(min-width:376px)" srcset="./images/image-product-desktop.jpg">
+      <img src="./images/image-product-mobile.jpg" alt="product-image">
+    </picture>
     <div class="product-informations">
       <small class="brand">PERFUME</small>
       <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
